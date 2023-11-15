@@ -13,7 +13,7 @@ public class TestUpdate {
     public static void main(String[] args) {
         FournisseurDAO dao = new FournisseurDAOJDBC();
         try {
-            dao.update("EPSI", "EPSI-2");
+            System.out.println(dao.update("JB Corporation", "JB Corp"));
         } catch (Exception e) {
             throw new RuntimeException(e);
         }

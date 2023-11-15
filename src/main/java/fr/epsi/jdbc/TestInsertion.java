@@ -13,7 +13,7 @@ public class TestInsertion {
     public static void main(String[] args){
         FournisseurDAO dao = new FournisseurDAOJDBC();
         try {
-            dao.insert(new Fournisseur("L'EPSI"));
+            dao.insert(new Fournisseur("L'EPSI")); // avec cette méthode, les noms avec ' peuvent être inséré
         } catch (Exception e) {
             throw new RuntimeException(e);
         }
